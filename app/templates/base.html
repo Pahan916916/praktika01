@@ -1,0 +1,15 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Praktika01</title>
+        {% else %}
+        <title>Praktika01</title>
+        {% endif %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/agency.min.css') }}">
+    </head>
+    <body>
+        <div>Praktika01: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
