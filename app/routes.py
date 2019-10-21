@@ -16,4 +16,6 @@ def index():
     #         'body': 'The Avengers movie was so cool!'
     #     }
     # ]
+
+    #HJNgfhiugfdhkjlKM<L
     return render_template('index.html', title='Home', user=user)
